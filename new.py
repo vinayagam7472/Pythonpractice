@@ -47,64 +47,84 @@
 
 
 
-station_no = 1
-
-first = 0
-last = 0
-count = 0
-
-print("All Stations:")
-
-while station_no <= 300:
-    if station_no % 3 == 0 and station_no % 8 == 0:
-        
-        # print all stations
-        print(station_no)
-
-
-        # first station
-        if first == 0:
-            first = station_no
-        
-        # last station
-        last = station_no
-        
-        # count
-        count += 1
-
-    station_no += 1
-
-
-print("\nFirst Station:", first)
-print("Last Station:", last)
-print("Total Stations:", count)
-
-
-
-
-
-station_no = 24
-
-count = 0
-
-while station_no <= 300:
-
-    print(station_no)
-
-    last_station = station_no
-    count = count + 1
-
-    station_no = station_no + 24
-
-
-print("\nFirst Station :", 24)
-print("All Stations Count :", count)
-print("Last Station Number :", last_station)
-
-
+##station_no = 1
+##
+##first = 0
+##last = 0
+##count = 0
+##
+##print("All Stations:")
+##
+##while station_no <= 300:
+##    if station_no % 3 == 0 and station_no % 8 == 0:
+##        
+##        # print all stations
+##        print(station_no)
+##
+##
+##        # first station
+##        if first == 0:
+##            first = station_no
+##        
+##        # last station
+##        last = station_no
+##        
+##        # count
+##        count += 1
+##
+##    station_no += 1
+##
+##
+##print("\nFirst Station:", first)
+##print("Last Station:", last)
+##print("Total Stations:", count)
+##
+##
+##
+##
+##
+##station_no = 24
+##
+##count = 0
+##
+##while station_no <= 300:
+##
+##    print(station_no)
+##
+##    last_station = station_no
+##    count = count + 1
+##
+##    station_no = station_no + 24
+##
+##
+##print("\nFirst Station :", 24)
+##print("All Stations Count :", count)
+##print("Last Station Number :", last_station)
 
 
 
+
+def find_prime(no):
+    if no>1:
+        div = 2
+        divisors_count = 0
+        while div <= no//2:
+            if no % div == 0: 
+                print('Divisor: ', div)
+                divisors_count+=1
+            div+=1
+
+        if divisors_count == 0:
+            return True
+        else:
+            return False
+
+result = find_prime(2)
+print(result)
+result = find_prime(13)
+print(result)
+result = find_prime(12)
+print(result)
 
 
     
