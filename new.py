@@ -176,5 +176,12 @@
 #    start=start-1
 
 
+#Sum of Digits
+no = 6739
+sum_of_digits = 0 
+while no>0:   
+    sum_of_digits = sum_of_digits + no%10   #4321
+    no = no // 10   
 
+print(sum_of_digits)
 
