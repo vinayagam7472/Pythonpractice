@@ -97,42 +97,42 @@
 #     print(1+int(i))
 
 
-#Find the factorial of a number.
-num=4
-fact=1
-i=1
-while i<=num:
-    fact=fact*i
-    i+=1
-print(fact)
+# #Find the factorial of a number.
+# num=4
+# fact=1
+# i=1
+# while i<=num:
+#     fact=fact*i
+#     i+=1
+# print(fact)
 
 
-#Reverse a number.
-num=12345
-rev=0
-while num>0:
-    rem=num%10
-    rev=rev*10+rem
-    num=num//10
-print(rev)
-
-
-##count the num
-# num=14500023450
-# count=0
+# #Reverse a number.
+# num=12345
+# rev=0
 # while num>0:
 #     rem=num%10
-#     count+=1
+#     rev=rev*10+rem
 #     num=num//10
-# print(count)
+# print(rev)
 
 
-##list
-# grocery_list = ['soap', 12, True, 'rice', 'veggies',4.5]
-# print(grocery_list)
-# for grocery_item in grocery_list:
-#     if type(grocery_item) == str:
-#         print(type(grocery_item))
+#count the num
+num=14500023450
+count=0
+while num>0:
+    rem=num%10
+    count+=1
+    num=num//10
+print(count)
+
+
+#list
+grocery_list = ['soap', 12, True, 'rice', 'veggies',4.5]
+print(grocery_list)
+for grocery_item in grocery_list:
+    if type(grocery_item) == str:
+        print(type(grocery_item))
 
 
 ##list
